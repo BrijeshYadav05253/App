@@ -219,7 +219,7 @@ function selectAnswer(a) {
 function showScore() {
     resetState();
     if (score < 10) {
-        questionElement.innerHTML = `🥲You scored ${score} out of ${questions.length}! practice more`;
+        questionElement.innerHTML = `🥲You scored ${score} out of ${questions.length}! Practice more`;
         nextButton.innerHTML = "Play Again";
         nextButton.style.display = "block";
     } else {
