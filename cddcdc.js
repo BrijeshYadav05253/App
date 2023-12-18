@@ -218,9 +218,15 @@ function selectAnswer(a){
 
 function showScore(){
     resetState();
-    questionElement.innerHTML = `✌️You scored ${score} out of ${questions.length}!🎉`;
-    nextButton.innerHTML = "Play Again";
-    nextButton.style.display = "block";
+    if (score<10){
+        questionElement.innerHTML = `🥲You scored ${score} out of ${questions.length}!practice more`;
+        nextButton.innerHTML = "Play Again";
+        nextButton.style.display = "block";
+    }else{
+        questionElement.innerHTML = `✌️You scored ${score} out of ${questions.length}!🎉`;
+        nextButton.innerHTML = "Play Again";
+        nextButton.style.display = "block";
+    }
 }
 
 
